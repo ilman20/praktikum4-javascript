@@ -1,0 +1,35 @@
+<html>
+    <head><title>praktikum 1</title>
+
+    
+        <script language="JavaScript">
+            function jumlah() {
+                var bil1=parseFloat(frcontoh.bilangan1.value);
+                // vaeriabel bil1 diberi nilai
+                // dari element input name="bilangan1" dari form contoh
+                var bil2=parseFloat(frcontoh.bilangan2.value);
+                if(isNaN (bil1)) {
+                    bil1=0.0;
+                }
+                if(isNaN (bil2)) {
+                    bil2=0.0;
+                }
+                var hasil = bil + bil2;
+                alert ("hasil penjumlahan = " + hasil);
+            }
+
+        </script>
+        </head>
+    <body>
+        <form name = "frcontoh">
+            <h3>memasukkan data leat kyboard</h3>
+            Bilangan Pertama : <br>
+            <input type="text" size="25" name="bilangan1"><br>
+            Bilangan Kedua : <br>
+            <input type="text" size="25" name="bilangan2"><br>
+            <input type="button" value="jumlahkan" onclick="jumlah()">
+            <input type="reset" value="ulang">
+        </form>
+
+    </body>
+    </html>
